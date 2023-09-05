@@ -1,0 +1,249 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+}
+
+.main-head {
+    display: flex;
+    background: linear-gradient(90deg, #FFFF00 1%, #FFEB3B 3%, #008BD4 100%, #EE82EE 100%, #2196F3 100%);
+    color: black;
+
+}
+
+.nav-elements ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-elements ul a {
+    margin-right: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    display: none;
+}
+
+.Grid {
+    margin-top: 150px;
+}
+
+.Colur-Grid {
+    padding: 100px;
+    border: 1px dotted red;
+    padding-bottom: 25px;
+    position: relative;
+    top: 0;
+    margin: 10px;
+    transition: all 0.3s Linear;
+}
+
+.Colur-Grid:hover {
+    background-color: #5DADE2;
+    top: -10px;
+}
+
+.caintainer {
+    background-color: #D5F5E3;
+    padding-bottom: 50px;
+
+}
+
+.AboutPaper {
+    min-height: 392px;
+    min-width: 430px
+}
+
+.grid-item {
+    margin-bottom: 1000px;
+}
+
+.Image-About {
+    margin-top: 100px;
+    border-radius: 1pc;
+}
+
+.page {
+    padding: 20px;
+    border-radius: 1pc;
+    font-family: inherit;
+    transition: all 0.3s linear;
+    top: 0px;
+}
+
+.page:hover {
+    background-color: #5DADE2;
+    animation: moveUpAnimation 0.3s ease-in-out forwards;
+}
+
+.item {
+    padding-left: 9pc;
+    background-color: #F9E79F;
+}
+
+/* code for making slider */
+.card-Slider {
+    margin: 10pc;
+}
+
+.container_ {
+    width: 60%;
+    margin: auto;
+}
+
+.cards-container_ {
+    display: flex;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.facebook-icon {
+    font-size: 30px;
+    color: #2E86C1;
+    transition: all 0.5s ease-in-out;
+}
+
+.facebook-icon:hover {
+    background-color: #008BD4;
+    border-radius: 10pc;
+    color: white;
+}
+
+.Question {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(241, 239, 197);
+    box-shadow: 13px 16px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 25px;
+}
+
+.Question:hover {
+    background-color: #008BD4;
+    color: white;
+}
+
+.Answer {
+    text-align: center;
+    padding: 23px;
+    background-color: beige;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+} 
+
+
+.followus ul{
+    list-style: none;
+}
+.followus ul li{
+    margin-top: 13px;
+    transition: all 0.5s ease-in-out;
+    width: 105px;
+} 
+.followus ul li:hover{
+    transform: translateX(5px);
+    position: relative;
+}
+.followus ul li a{
+    text-decoration: none;
+    color: #008BD4;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes moveUpAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .icon {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        margin-left: 50%;
+        position: relative;
+    }
+
+    .nav-elements {
+        position: absolute;
+        right: 0;
+        width: 0;
+        top: 60px;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+    }
+
+    .nav-elements.active {
+        width: 300px;
+        background: linear-gradient(90deg, #FFFF00 1%, #FFEB3B 3%, #008BD4 100%, #EE82EE 100%, #2196F3 100%);
+    }
+
+    .nav-elements ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-elements ul li {
+        margin-top: 20px;
+    }
+
+    /* responsive  Grid */
+    .Grid {
+        margin: 10px;
+    }
+
+    .grid-item {
+        margin-bottom: 0px;
+    }
+
+    .Image-About {
+        margin-top: -100px;
+        border-radius: 1pc;
+    }
+
+    .item {
+        padding-left: 0px;
+    }
+
+}
